@@ -1,0 +1,251 @@
+header {
+  height: 500px;
+  background-color: #ffc017;
+  font-family: spectral, serif;
+}
+
+main {
+  margin-top: 2em;
+  padding-left: 8em;
+}
+main h4,
+h5,
+h6 {
+  font-family: roboto, sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+header hr {
+  border: 0;
+  height: 3px;
+  background-color: #333;
+}
+
+#nav {
+  background-color: #ffc017;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  animation: cambioColore 1s linear;
+}
+
+#nav.scrolled {
+  background-color: white;
+}
+
+#navBar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 0;
+}
+
+#navBar img {
+  padding-left: 8em;
+}
+
+#navBar ul {
+  display: flex;
+  align-items: center;
+  padding: 0 10em;
+  list-style: none;
+}
+
+#navBar li {
+  padding: 0 1em;
+}
+
+#navBar li:last-of-type {
+  background-color: black;
+  padding: 13px 17px;
+  color: white;
+  border-radius: 50px;
+  animation: cambioColoreLi 1s linear;
+}
+
+#nav.scrolled li:last-of-type {
+  background-color: green;
+}
+
+#sezioneGialla {
+  display: flex;
+  height: 400px;
+  padding-top: 90px;
+}
+#sezioneGialla div {
+  margin-top: 4em;
+  margin-bottom: 6em;
+  padding-right: 15em;
+  padding-left: 8em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#sezioneGialla p {
+  width: 340px;
+  font-size: 1.3em;
+}
+
+#sezioneGialla button {
+  color: white;
+  background-color: black;
+  border: none;
+  font-size: 1.5em;
+  padding: 10px 40px;
+  border-radius: 50px;
+}
+
+#trending {
+  display: flex;
+  align-items: center;
+}
+
+#trending h5 {
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+#trend {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+#trend span {
+  font-size: 30px;
+  font-weight: bold;
+  color: gray;
+  opacity: 0.5;
+}
+
+#trend div {
+  flex: 0 1 calc(33.33% - 30px); /*ho trovato un po di difficolta allineando tutto uguale avendo dimensioni diverse e facendo ricerche ho trovato questa soluzione*/
+  margin: 15px;
+}
+
+#trend img {
+  display: inline-block;
+  border-radius: 50%;
+}
+
+#trend h6 {
+  display: inline-block;
+}
+
+#trend h4 {
+  margin: 15px;
+  color: #333;
+}
+
+#trend p {
+  color: #666;
+  margin: 0 15px 15px 15px;
+}
+
+#colonne {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  padding-top: 5em;
+}
+
+#colonna1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#colonna1 h6 {
+  margin-bottom: 1em;
+  margin-left: 2em;
+}
+
+#colonna1 h4 {
+  font-size: 1em;
+}
+#colonna1 div {
+  display: flex;
+  flex-direction: column;
+  width: 440px;
+  height: 140px;
+  padding-left: 3em;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+#colonna1 img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+}
+
+#colonna1 p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+
+#colonna1 p img:last-child {
+  margin-left: auto;
+}
+
+#colonna1 span {
+  position: absolute;
+  left: 46px;
+}
+
+#colonna2 {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 400px;
+  height: 1190px;
+  margin-left: 2em;
+}
+
+#colonna2 div {
+  height: 100%;
+  margin-bottom: 15px;
+}
+
+#colonna2 img {
+  max-width: 100%;
+}
+
+#colonna3 {
+  width: 400px;
+  margin-left: 3em;
+}
+
+#colonna3 h4 {
+  font-size: 1em;
+  margin-bottom: 1em;
+}
+#button {
+  margin: 1em 1em;
+  padding: 1em 1em;
+}
+
+#button button {
+  padding: 1em 1em;
+  margin: 3px 3px;
+}
+#info ul {
+  display: flex;
+  list-style: none;
+}
+#info ul li {
+  font-size: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3px 3px;
+}
